@@ -4,9 +4,11 @@ import Event from "./pages/event";
 import Createvent from "./pages/createvent";
 import Signin from "./pages/signin";
 import Signup from "./pages/signup";
+import Header from "./component/header";
 
 export default function App() {
   return <BrowserRouter>
+      <Header/>
        <Routes>
         <Route  path="/" element={<Homelist/>}/>
         <Route  path="/event" element={<Event/>}/>
